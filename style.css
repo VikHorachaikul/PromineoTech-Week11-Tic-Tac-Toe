@@ -1,0 +1,29 @@
+body {
+    background-color: black;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 48px;
+    cursor: pointer;
+    background-color: #00FF00;
+    color: #FF69B4;
+}
+
+#turn-indicator {
+    color: white;
+    margin-bottom: 10px;
+}
+
+#restart-button {
+    margin-top: 20px;
+}
+
+#winner-modal {
+    color: white;
+}

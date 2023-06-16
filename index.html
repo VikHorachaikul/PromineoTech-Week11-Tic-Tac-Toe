@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2 id="turn-indicator">It's X's turn</h2>
+        <div id="game-container" class="row">
+            <div class="col-4 cell" onclick="makeMove(this, 0, 0)"></div>
+            <div class="col-4 cell" onclick="makeMove(this, 0, 1)"></div>
+            <div class="col-4 cell" onclick="makeMove(this, 0, 2)"></div>
+            <div class="col-4 cell" onclick="makeMove(this, 1, 0)"></div>
+            <div class="col-4 cell" onclick="makeMove(this, 1, 1)"></div>
+            <div class="col-4 cell" onclick="makeMove(this, 1, 2)"></div>
+            <div class="col-4 cell" onclick="makeMove(this, 2, 0)"></div>
+            <div class="col-4 cell" onclick="makeMove(this, 2, 1)"></div>
+            <div class="col-4 cell" onclick="makeMove(this, 2, 2)"></div>
+        </div>
+        <button id="restart-button" class="btn btn-primary">Restart</button>
+    </div>
+
+    <div id="winner-modal" class="modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content bg-dark">
+                <div class="modal-header">
+                    <h5 class="modal-title">Game Over</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p id="winner-message"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
